@@ -11,14 +11,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MainController {
 
-    @Autowired
-    private RecipeDAO recipeDAO;
 
     @Autowired
     private RecupeServise recupeServise;
 
     @RequestMapping("/")
-    public ModelAndView jumpToMain() {return new ModelAndView("main", "recipe", recipeDAO.findBest());}
+    public ModelAndView jumpToMain() {return new ModelAndView("main", "recipe", recupeServise.findBest());}
 
     @RequestMapping("/main")
     public ModelAndView listMain() {return new ModelAndView("main", "recipe", recupeServise.findBest());}

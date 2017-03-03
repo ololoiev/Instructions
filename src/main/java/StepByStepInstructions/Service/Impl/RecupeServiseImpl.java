@@ -1,13 +1,16 @@
 package StepByStepInstructions.Service.Impl;
 
 
+import StepByStepInstructions.Service.RecupeServise;
 import org.springframework.beans.factory.annotation.Autowired;
 import StepByStepInstructions.DAO.RecipeDAO;
 import StepByStepInstructions.model.Recipe;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public class RecupeServiseImpl {
+
+public class RecupeServiseImpl implements RecupeServise{
     @Autowired
     private RecipeDAO recipeDAO;
 
