@@ -29,4 +29,6 @@ public class RecupeServiseImpl {
     public List<Recipe> getAll(){
         return recipeDAO.findAll();
     }
+
+    public List<Recipe> findBest(){return recipeDAO.findBest();}
 }

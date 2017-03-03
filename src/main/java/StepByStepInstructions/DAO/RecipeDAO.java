@@ -15,6 +15,6 @@ public interface RecipeDAO extends JpaRepository<Recipe, Integer>{
     Recipe findByName(@Param("name") String NAME);
     @Query("select r from recipe r, rating g where r.id= g.ID_RECIPE " +
             "group by r.id, r.NAME, r.ID_USER, r.ID_CATEGORY, r.VIDEO order by avg (g.mark)")
-    Recipe findBest();
+    List<Recipe> findBest();
 
 }
