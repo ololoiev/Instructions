@@ -8,7 +8,7 @@ import StepByStepInstructions.model.Recipe;
 
 import java.util.List;
 
-@Repository
+
 public interface RecipeDAO extends JpaRepository<Recipe, Integer>{
     List<Recipe> findAll();
     @Query("select r from recipe r where r.name = :name")

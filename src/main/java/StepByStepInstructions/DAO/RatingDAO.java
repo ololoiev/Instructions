@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import StepByStepInstructions.model.Rating;
 
 
-@Repository
+
 public interface RatingDAO extends JpaRepository<Rating, Integer> {
 }

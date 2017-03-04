@@ -12,11 +12,6 @@
             <property name="javax.persistence.jdbc.password" value="root" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
-            <property name="hibernate.max_fetch_depth" value="5"/>
-            <property name="jpaVendorAdapter"
-                value="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
-
         </properties>
     </persistence-unit>
-
 </persistence>
